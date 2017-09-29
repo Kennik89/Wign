@@ -104,11 +104,11 @@
         <input type="text" id="tegn" name="tegn" value="{{ $word }}" placeholder="Skriv ordet"><br>
         
         <label for="beskrivelse">Beskrivelse:</label>
-        <textarea id="beskrivelse" name="beskr" placeholder="Skriv lidt om tegnet"></textarea><br>
+        <textarea id="beskrivelse" name="beskr" placeholder="Skriv lidt om kontekst bag tegnet"></textarea><br>
         
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input type="submit" value="Indsend tegnet" id="btnSubmit">
-        <p><small>Ved indsendelsen bekræfter jeg at jeg har læst og accepteret Wign's <a href="{{ URL::to('/retningslinjer/') }}">retningslinjer</a><small></p>
+        <p><small>Ved indsendelsen bekræfter jeg at have læst og accepteret Wign's <a href="{{ URL::to('/retningslinjer/') }}">retningslinjer</a><small></p>
 
     </form>
 @stop
